@@ -406,6 +406,9 @@ def make_ranking_table(data, ascending=False):
         range(1, len(ranking) + 1),
     )
 
+    ranking["시군구"] = ranking["시군구"].fillna(ranking["시도"])
+
+    
     ranking["고령화율"] = ranking["고령화율"].map(
         lambda value: f"{value:.1f}%"
     )
