@@ -345,7 +345,7 @@ def make_map(data, geojson, group_labels):
 
     # 시군구 경계선을 표시합니다.
     figure.update_traces(
-        marker_line_color = "#B8B8B8"
+        marker_line_color = "#B8B8B8",
         marker_line_width = 0.7,
         hovertemplate=(
             "<b>%{hovertext}</b><br>"
